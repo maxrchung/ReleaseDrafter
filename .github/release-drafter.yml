@@ -1,18 +1,6 @@
 name-template: '$RESOLVED_VERSION'
 tag-template: '$RESOLVED_VERSION'
 
-categories:
-- title: '🚀 Features'
-  labels:
-  - 'feature'
-  - 'enhancement'
-
-- title: '🐛 Bug Fixes'
-  labels:
-  - 'fix'
-  - 'bugfix'
-  - 'bug'
-
 version-resolver:
   major:
     labels:
@@ -23,7 +11,6 @@ version-resolver:
   patch:
     labels:
     - 'patch'
-  default: patch
 
 template: |
   ## Changes
