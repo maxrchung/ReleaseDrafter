@@ -1,0 +1,13 @@
+name: Continuous Integration
+
+on: push
+
+jobs:
+  continuous-integration:
+    runs-on: windows-latest
+
+    steps:
+    - name: Update release draft
+      uses: release-drafter/release-drafter@v5
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
