@@ -4,7 +4,7 @@ on: push
 
 jobs:
   continuous-integration:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Update release draft
