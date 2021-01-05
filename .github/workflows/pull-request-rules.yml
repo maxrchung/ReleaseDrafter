@@ -30,7 +30,7 @@ jobs:
         labels: major, minor, patch
         
     - name: Release must have Release in title
-      if: ${{ github.head_ref == 'release' }}
+      if: ${{ github.base_ref == 'release' }}
       uses: deepakputhraya/action-pr-title@master
       with:
         allowed_prefixes: 'Release'
