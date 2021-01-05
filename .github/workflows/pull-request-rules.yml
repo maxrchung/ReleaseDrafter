@@ -28,3 +28,10 @@ jobs:
         mode: exactly
         count: 1
         labels: major, minor, patch
+        
+    - name: Release must have Release in title
+      if: ${{ github.head_ref == 'release' }}
+      uses: deepakputhraya/action-pr-title@master
+      with:
+        allowed_prefixes: 'Release'
+        prefix_case_sensitive: true
