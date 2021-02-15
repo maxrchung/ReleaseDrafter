@@ -1,2 +1,7 @@
 The next evolution of TIME
+<<<<<<< HEAD
+next REVOLUTION
+next line
+=======
 next REVOLUTIONbbb
+>>>>>>> 90393e124118392fd597072240e32a91548793d6
