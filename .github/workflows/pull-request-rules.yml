@@ -28,3 +28,8 @@ jobs:
         mode: exactly
         count: 1
         labels: major, minor, patch
+
+    - name: Pull requests must link an issue
+      uses: hattan/verify-linked-issue-action@v1.1.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
