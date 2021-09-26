@@ -9,10 +9,7 @@ jobs:
   continuous-integration:
     runs-on: ubuntu-latest
 
+    env:
+      TEST_VAR: ${{ secrets.TEST_VAR }}
     steps:
-    - name: Update release draft
-      uses: release-drafter/release-drafter@v5
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        publish: true
+    - run: echo $TEST_VAR
